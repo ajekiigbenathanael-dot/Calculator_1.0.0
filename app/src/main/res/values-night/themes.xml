@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Calculator"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/accent_cyan</item>
+
+        <item name="colorPrimaryContainer">@color/bg_display</item>
+
+        <item name="colorOnPrimary">@color/text_primary</item>
+
+        <item name="colorSecondary">@color/accent_green</item>
+
+        <item name="android:windowBackground">@color/bg_primary</item>
+
+        <item name="android:statusBarColor">@color/bg_primary</item>
+
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+
+    </style>
+
+</resources>

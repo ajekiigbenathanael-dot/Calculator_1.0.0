@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SCIENTIFIC CALCULATOR - COLOR PALETTE -->
+
+
+    <!-- Application Background   -->
+
+    <!-- Main application background -->
+    <color name="bg_primary">#0A0A0C</color>
+
+    <!-- Calculator display background -->
+    <color name="bg_display">#0F0F13</color>
+
+
+    <!-- Digit Buttons -->
+
+    <!-- Normal state -->
+    <color name="bg_digit">#16161C</color>
+
+    <!-- Pressed state -->
+    <color name="bg_digit_pressed">#24242D</color>
+
+
+    <!-- Operator Buttons (+ − × ÷) -->
+
+    <color name="bg_operator">#1A1008</color>
+    <color name="bg_operator_pressed">#2B1A0C</color>
+
+
+    <!-- Equals Button (=) -->
+
+    <color name="bg_equals">#0A1A12</color>
+    <color name="bg_equals_pressed">#123322</color>
+
+
+    <!-- Trigonometric Functions -->
+
+    <color name="bg_trig">#071820</color>
+    <color name="bg_trig_pressed">#0B2633</color>
+
+
+    <!-- Hyperbolic Functions  -->
+
+    <color name="bg_hyp">#0A1A18</color>
+    <color name="bg_hyp_pressed">#12302D</color>
+
+
+    <!-- Mathematical Constants -->
+
+    <color name="bg_const">#071820</color>
+    <color name="bg_const_pressed">#10303F</color>
+
+
+    <!-- Special Function Buttons -->
+
+    <color name="bg_special">#111116</color>
+    <color name="bg_special_pressed">#20202A</color>
+
+
+    <!-- Statistics Buttons  -->
+
+    <color name="bg_stat">#0A1A18</color>
+    <color name="bg_stat_pressed">#12302D</color>
+
+
+    <!-- Delete Button   -->
+
+    <color name="bg_delete">#52390D</color>
+    <color name="bg_delete_pressed">#8A6220</color>
+
+
+    <!-- AC / Clear Button-->
+
+    <color name="bg_destruct">#1A0808</color>
+    <color name="bg_destruct_pressed">#330F0F</color>
+
+
+    <!-- Text Colors-->
+
+    <!-- General text -->
+    <color name="text_primary">#F4F4F6</color>
+
+    <!-- Secondary information -->
+    <color name="text_secondary">#F4F4F6</color>
+
+    <!-- Digit buttons -->
+    <color name="text_digit">#C8CDD8</color>
+
+
+    <!-- Accent Colors -->
+
+    <!-- Cyan - Scientific functions -->
+    <color name="accent_cyan">#00D4C8</color>
+
+    <!-- Gold - Arithmetic operators -->
+    <color name="accent_gold">#D4A843</color>
+
+    <!-- Green - Equals & Constants -->
+    <color name="accent_green">#22C97A</color>
+
+    <!-- Neutral gray - Special buttons -->
+    <color name="accent_gray">#888E9C</color>
+
+    <!-- Red - Destructive actions -->
+    <color name="accent_red">#F26060</color>
+
+</resources>

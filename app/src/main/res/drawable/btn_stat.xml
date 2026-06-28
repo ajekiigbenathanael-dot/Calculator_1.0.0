@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PRESSED -->
+    <item android:state_pressed="true">
+
+        <layer-list>
+
+            <!-- Shadow -->
+            <item android:top="2dp">
+
+                <shape>
+
+                    <solid android:color="#0C0C10"/>
+
+                    <corners android:radius="8dp"/>
+
+                </shape>
+
+            </item>
+
+            <!-- Button -->
+            <item>
+
+                <shape>
+
+                    <gradient
+                        android:startColor="#2A2A33"
+                        android:endColor="#17171D"
+                        android:angle="270"/>
+
+                    <stroke
+                        android:width="1dp"
+                        android:color="#555560"/>
+
+                    <corners android:radius="8dp"/>
+
+                </shape>
+
+            </item>
+
+        </layer-list>
+
+    </item>
+
+    <!-- NORMAL -->
+
+    <item>
+
+        <layer-list>
+
+            <!-- Bottom Shadow -->
+            <item
+                android:top="2dp">
+
+                <shape>
+
+                    <solid android:color="#09090C"/>
+
+                    <corners android:radius="8dp"/>
+
+                </shape>
+
+            </item>
+
+            <!-- Main Button -->
+
+            <item
+                android:bottom="2dp">
+
+                <shape>
+
+                    <gradient
+                        android:startColor="#3A3A46"
+                        android:centerColor="#292932"
+                        android:endColor="#1A1A20"
+                        android:angle="270"/>
+
+                    <stroke
+                        android:width="1dp"
+                        android:color="#575760"/>
+
+                    <corners android:radius="8dp"/>
+
+                </shape>
+
+            </item>
+
+            <!-- Top Shine -->
+
+            <item
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp">
+
+                <shape>
+
+                    <solid android:color="#55FFFFFF"/>
+
+                    <corners android:radius="8dp"/>
+
+                    <size android:height="1dp"/>
+
+                </shape>
+
+            </item>
+
+        </layer-list>
+
+    </item>
+
+</selector>

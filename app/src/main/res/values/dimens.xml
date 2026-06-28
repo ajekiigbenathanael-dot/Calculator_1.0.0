@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SCIENTIFIC CALCULATOR - DIMENSIONS-->
+
+
+    <!-- Button Layout-->
+
+    <!-- Space between calculator buttons -->
+    <dimen name="btn_margin">4dp</dimen>
+
+    <!-- Rounded button corners -->
+    <dimen name="btn_corner_radius">12dp</dimen>
+
+
+    <!-- Button Text Sizes   -->
+
+    <!-- Digits (0-9) -->
+    <dimen name="text_digit">20sp</dimen>
+
+    <!-- Operators (+ − × ÷) -->
+    <dimen name="text_operator">22sp</dimen>
+
+    <!-- Equals (=) -->
+    <dimen name="text_equals">26sp</dimen>
+
+    <!-- Trigonometric buttons -->
+    <dimen name="text_trig">14sp</dimen>
+
+    <!-- Hyperbolic buttons -->
+    <dimen name="text_hyp">13sp</dimen>
+
+    <!-- Constants -->
+    <dimen name="text_const">13sp</dimen>
+
+    <!-- Special buttons -->
+    <dimen name="text_special">14sp</dimen>
+
+    <!-- Statistics -->
+    <dimen name="text_stat">12sp</dimen>
+
+    <!-- Delete -->
+    <dimen name="text_delete">18sp</dimen>
+
+    <!-- AC -->
+    <dimen name="text_destruct">16sp</dimen>
+
+
+    <!-- Display    -->
+
+    <!-- Main expression text -->
+    <dimen name="display_text">34sp</dimen>
+
+    <!-- Result text -->
+    <dimen name="result_text">22sp</dimen>
+
+    <!-- Display padding -->
+    <dimen name="display_padding">16dp</dimen>
+
+</resources>

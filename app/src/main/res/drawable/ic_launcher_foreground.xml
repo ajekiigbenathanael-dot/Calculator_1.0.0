@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Calculator Body -->
+    <path
+        android:fillColor="#16161C"
+        android:pathData="M24,12h60a8,8 0,0 1,8 8v68a8,8 0,0 1,-8 8H24a8,8 0,0 1,-8 -8V20a8,8 0,0 1,8 -8z"/>
+
+    <!-- Cyan Border -->
+    <path
+        android:fillColor="#00D4C8"
+        android:pathData="M24,12h60v3H24z"/>
+
+    <!-- Display -->
+    <path
+        android:fillColor="#0F0F13"
+        android:pathData="M28,20h52v16H28z"/>
+
+    <!-- π Symbol -->
+    <path
+        android:fillColor="#22C97A"
+        android:pathData="
+            M42,24
+            H66
+            V27
+            H58
+            V33
+            H54
+            V27
+            H46
+            V33
+            H42
+            Z"/>
+
+    <!-- Button Row 1 -->
+    <path android:fillColor="#00D4C8"
+        android:pathData="M28,44h10v10H28z"/>
+
+    <path android:fillColor="#00D4C8"
+        android:pathData="M42,44h10v10H42z"/>
+
+    <path android:fillColor="#00D4C8"
+        android:pathData="M56,44h10v10H56z"/>
+
+    <path android:fillColor="#D4A843"
+        android:pathData="M70,44h10v10H70z"/>
+
+    <!-- Button Row 2 -->
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M28,58h10v10H28z"/>
+
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M42,58h10v10H42z"/>
+
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M56,58h10v10H56z"/>
+
+    <path android:fillColor="#D4A843"
+        android:pathData="M70,58h10v10H70z"/>
+
+    <!-- Button Row 3 -->
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M28,72h10v10H28z"/>
+
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M42,72h10v10H42z"/>
+
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M56,72h10v10H56z"/>
+
+    <!-- Equals Button -->
+    <path
+        android:fillColor="#22C97A"
+        android:pathData="M70,72h10v24H70z"/>
+
+    <!-- Bottom Buttons -->
+    <path android:fillColor="#C8CDD8"
+        android:pathData="M28,86h24v10H28z"/>
+
+    <path android:fillColor="#D4A843"
+        android:pathData="M56,86h10v10H56z"/>
+
+</vector>

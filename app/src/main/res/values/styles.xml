@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SCIENTIFIC CALCULATOR - STYLES -->
+
+
+
+    <!-- Application Theme  -->
+    <style name="AppTheme"
+        parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorPrimaryDark">@color/bg_primary</item>
+        <item name="colorAccent">@color/accent_green</item>
+
+        <item name="android:windowBackground">
+            @color/bg_primary
+        </item>
+
+        <item name="android:statusBarColor">
+            @color/bg_primary
+        </item>
+
+        <item name="android:navigationBarColor">
+            @color/bg_primary
+        </item>
+
+    </style>
+
+
+
+
+    <!-- Dark Alert Dialog -->
+    <style name="DarkDialog"
+        parent="Theme.MaterialComponents.Dialog.Alert">
+
+        <item name="colorSurface">@color/bg_display</item>
+
+        <item name="colorOnSurface">
+            @color/text_primary
+        </item>
+
+        <item name="colorPrimary">
+            @color/accent_cyan
+        </item>
+
+        <item name="android:textColorPrimary">
+            @color/text_primary
+        </item>
+
+        <item name="android:textColorSecondary">
+            @color/text_secondary
+        </item>
+
+        <item name="android:background">
+            @color/bg_display
+        </item>
+
+    </style>
+
+
+
+    <!-- Base Button Style  -->
+
+    <style name="BtnBase">
+
+        <item name="android:layout_width">0dp</item>
+
+        <item name="android:layout_height">0dp</item>
+
+        <item name="android:layout_columnWeight">1</item>
+
+        <item name="android:layout_rowWeight">1</item>
+
+        <item name="android:layout_margin">4dp</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:letterSpacing">0</item>
+
+        <item name="android:stateListAnimator">@null</item>
+
+        <item name="android:elevation">0dp</item>
+
+        <item name="cornerRadius">12dp</item>
+
+        <item name="rippleColor">@color/text_primary</item>
+
+    </style>
+
+
+
+    <!-- Digit Buttons-->
+
+    <style name="BtnDigit" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_digit</item>
+
+        <item name="android:textColor">@color/text_digit</item>
+
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+
+
+    <!-- Arithmetic Operators  -->
+
+    <style name="BtnOp" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_operator</item>
+
+        <item name="android:textColor">@color/accent_red</item>
+
+        <item name="android:textSize">22sp</item>
+
+        <item name="android:textStyle">bold</item>
+
+        <item name="cornerRadius">6dp</item>
+
+    </style>
+
+
+
+    <!-- Equals Button                                         -->
+
+    <style name="BtnEquals" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_equals</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+
+        <item name="android:textSize">24sp</item>
+
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+
+    <!-- Trigonometric Functions-->
+
+    <style name="BtnTrig" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_trig</item>
+
+        <item name="android:textColor">@color/accent_cyan</item>
+
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+
+
+    <!-- Hyperbolic Functions -->
+
+    <style name="BtnHyp" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_hyp</item>
+
+        <item name="android:textColor">@color/accent_cyan</item>
+
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+
+
+    <!-- Mathematical Constants-->
+
+    <style name="BtnConst" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_const</item>
+
+        <item name="android:textColor">@color/accent_green</item>
+
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+
+
+    <!-- Special Functions  -->
+
+    <style name="BtnSpecial" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_special</item>
+
+        <item name="android:textColor">@color/accent_cyan</item>
+
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+
+    <!-- Statistics Buttons  -->
+
+    <style name="BtnStat" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_stat</item>
+
+        <item name="android:textColor">@color/accent_cyan</item>
+
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+
+
+
+    <!-- Delete Button  -->
+
+    <style name="BtnDelete" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_delete</item>
+
+        <item name="android:textColor">@color/accent_gold</item>
+
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+
+
+    <!-- AC / Clear Button -->
+
+    <style name="BtnDestruct" parent="BtnBase">
+
+        <item name="android:background">@drawable/btn_destruct</item>
+
+        <item name="android:textColor">@color/accent_red</item>
+
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+</resources>
