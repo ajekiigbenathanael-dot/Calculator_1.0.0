@@ -32,8 +32,7 @@ public class CalculatorEngine {
     public void setAngleMode(AngleMode mode) { this.angleMode = mode; }
     public AngleMode getAngleMode()          { return angleMode; }
 
-    // ── Public entry point ────────────────────────────────────────────────────
-
+    // ── Public entry point
     public double evaluate(String expression) throws Exception {
         if (expression == null || expression.trim().isEmpty()) {
             throw new Exception("Empty expression");
@@ -48,8 +47,7 @@ public class CalculatorEngine {
         return result;
     }
 
-    // ── Pre-processing ────────────────────────────────────────────────────────
-
+    // ── Pre-processing
     /**
      * Converts display symbols and inserts * for implicit multiplication.
      *
@@ -66,7 +64,7 @@ public class CalculatorEngine {
      */
     private String preprocess(String s) {
 
-        // ── 1. Symbol substitution ────────────────────────────────────────────
+        // ── 1. Symbol substitution
         s = s.replace("×",      "*")
                 .replace("÷",      "/")
                 .replace("−",      "-")
@@ -75,25 +73,25 @@ public class CalculatorEngine {
                 .replace("\u00B2", "^2")
                 .trim();
 
-        // ── 2. Parenthesis implicit multiplication ────────────────────────────
+        // ── 2. Parenthesis implicit multiplication
         s = s.replaceAll("(\\d)\\(", "$1*(");    // 2(  →  2*(
         s = s.replaceAll("\\)(\\d)", ")*$1");    // )2  →  )*2
         s = s.replaceAll("\\)\\(",   ")*(");      // )(  →  )*(
 
-        // ── 3. pi rules ───────────────────────────────────────────────────────
+        // ── 3. pi rules
         s = s.replaceAll("(\\d)pi", "$1*pi");    // 2pi  →  2*pi
         s = s.replaceAll("pi(\\d)", "pi*$1");    // pi2  →  pi*2
         s = s.replaceAll("\\)pi",   ")*pi");     // )pi  →  )*pi
         s = s.replaceAll("pi\\(",   "pi*(");     // pi(  →  pi*(
 
-        // ── 4. e-constant rules (protect scientific notation) ─────────────────
+        // ── 4. e-constant rules (protect scientific notation)
         // Negative lookahead (?![0-9+\-]) stops 1.5e10 from becoming 1.5*e*10
         s = s.replaceAll("(\\d)(e)(?![0-9+\\-])",  "$1*$2");  // 2e  →  2*e
         s = s.replaceAll("(?<![0-9.])(e)(\\d)",     "$1*$2");  // e2  →  e*2
         s = s.replaceAll("\\)e(?![0-9+\\-])",       ")*e");    // )e  →  )*e
         s = s.replaceAll("e(?![0-9+\\-])\\(",       "e*(");    // e(  →  e*(
 
-        // ── 5. P and C are LEFT ALONE between digits ──────────────────────────
+        // ── 5. P and C are LEFT ALONE between digits
         //
         //   Do NOT insert * here. parsePower() reads the left operand as a
         //   number, then checks the next character. If it is P or C it treats
@@ -105,10 +103,10 @@ public class CalculatorEngine {
         //   If we inserted * here:  12*P4 → parseTerm multiplies 12 by ...
         //   then tries to read P4 as a primary → crash.
 
-        // ── 6. )letter  →  )*letter  (e.g. )sin, )cos, )sqrt) ───────────────
+        // ── 6. )letter  →  )*letter  (e.g. )sin, )cos, )sqrt)
         s = s.replaceAll("\\)([a-zA-Z])", ")*$1");
 
-        // ── 7. Catch-all: digit before letter → insert * ─────────────────────
+        // ── 7. Catch-all: digit before letter → insert *
         //   Covers: 2sin, 3cos, 4tan, 5log, 2ln, 4sqrt, 2cbrt, etc.
         //   EXCLUDES P and C between digits — the negative lookahead
         //   (?![PC]) is NOT needed here because step 5 left them intact
@@ -135,8 +133,7 @@ public class CalculatorEngine {
         return sb.toString();
     }
 
-    // ── Parser ────────────────────────────────────────────────────────────────
-    //
+    // ── Parser
     //   Precedence chain (lowest → highest):
     //
     //     parseExpression   +  −

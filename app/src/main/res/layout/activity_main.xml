@@ -47,7 +47,7 @@
                 android:layout_height="32dp"
                 android:text="⏱"
                 android:textSize="14sp"
-                android:background="@drawable/btn_special"
+                android:background="@drawable/btn_special_history"
                 android:padding="0dp"/>
         </LinearLayout>
 
@@ -94,49 +94,49 @@
         android:rowCount="9"
         android:useDefaultMargins="false">
 
-        <!-- ── ROW 0: AC  DEL  (  )  % ── -->
+        <!-- ROW 0: AC  DEL  (  )  %  -->
         <Button android:id="@+id/btnAC"       style="@style/BtnDestruct"   android:text="AC"   android:layout_column="0" android:layout_row="1"/>
         <Button android:id="@+id/btnDel"      style="@style/BtnDelete"     android:text="⌫"    android:layout_column="1" android:layout_row="1"/>
         <Button android:id="@+id/btnOpenParen" style="@style/BtnSpecial"   android:text="("    android:layout_column="2" android:layout_row="1"/>
         <Button android:id="@+id/btnCloseParen" style="@style/BtnSpecial"  android:text=")"    android:layout_column="3" android:layout_row="1"/>
         <Button android:id="@+id/btnMod"      style="@style/BtnSpecial"    android:text="%"    android:layout_column="4" android:layout_row="1"/>
 
-        <!-- ── ROW 1: sin cos tan ln log ── -->
+        <!-- ROW 1: sin cos tan ln log  -->
         <Button android:id="@+id/btnSin"   style="@style/BtnTrig" android:text="sin" android:layout_column="0" android:layout_row="2"/>
         <Button android:id="@+id/btnCos"   style="@style/BtnTrig" android:text="cos" android:layout_column="1" android:layout_row="2"/>
         <Button android:id="@+id/btnTan"   style="@style/BtnTrig" android:text="tan" android:layout_column="2" android:layout_row="2"/>
         <Button android:id="@+id/btnLn"    style="@style/BtnTrig" android:text="ln"  android:layout_column="3" android:layout_row="2"/>
         <Button android:id="@+id/btnLog"   style="@style/BtnTrig" android:text="log" android:layout_column="4" android:layout_row="2"/>
 
-        <!-- ── ROW 2: sinh cosh tanh √ x² ── -->
+        <!-- ROW 2: sinh cosh tanh √ x²  -->
         <Button android:id="@+id/btnSinh"  style="@style/BtnHyp"  android:text="sinh" android:layout_column="0" android:layout_row="3"/>
         <Button android:id="@+id/btnCosh"  style="@style/BtnHyp"  android:text="cosh" android:layout_column="1" android:layout_row="3"/>
         <Button android:id="@+id/btnTanh"  style="@style/BtnHyp"  android:text="tanh" android:layout_column="2" android:layout_row="3"/>
         <Button android:id="@+id/btnSqrt"  style="@style/BtnHyp"  android:text="√"    android:layout_column="3" android:layout_row="3"/>
         <Button android:id="@+id/btnSquare" style="@style/BtnHyp" android:text="x²"   android:layout_column="4" android:layout_row="3"/>
 
-        <!-- ── ROW 3: π  e  nPr  nCr  MAT ── -->
+        <!--ROW 3: π  e  nPr  nCr  MAT  -->
         <Button android:id="@+id/btnPi"    style="@style/BtnConst" android:text="π"    android:layout_column="0" android:layout_row="4"/>
         <Button android:id="@+id/btnE"     style="@style/BtnConst" android:text="e"    android:layout_column="1" android:layout_row="4"/>
         <Button android:id="@+id/btnNPR"   style="@style/BtnConst" android:text="nPr"  android:layout_column="2" android:layout_row="4"/>
         <Button android:id="@+id/btnNCR"   style="@style/BtnConst" android:text="nCr"  android:layout_column="3" android:layout_row="4"/>
         <Button android:id="@+id/btnMatrix" style="@style/BtnConst" android:text="MAT" android:layout_column="4" android:layout_row="4"/>
 
-        <!-- ── ROW 4: 7  8  9  ÷  xʸ ── -->
+        <!--  ROW 4: 7  8  9  ÷  xʸ -->
         <Button android:id="@+id/btn7"   style="@style/BtnDigit"  android:text="7"  android:layout_column="0" android:layout_row="5"/>
         <Button android:id="@+id/btn8"   style="@style/BtnDigit"  android:text="8"  android:layout_column="1" android:layout_row="5"/>
         <Button android:id="@+id/btn9"   style="@style/BtnDigit"  android:text="9"  android:layout_column="2" android:layout_row="5"/>
         <Button android:id="@+id/btnDiv" style="@style/BtnOp"     android:text="÷"  android:layout_column="3" android:layout_row="5"/>
         <Button android:id="@+id/btnPow" style="@style/BtnSpecial" android:text="xʸ" android:layout_column="4" android:layout_row="5"/>
 
-        <!-- ── ROW 5: 4  5  6  ×  1/x ── -->
+        <!--ROW 5: 4  5  6  ×  1/x -->
         <Button android:id="@+id/btn4"   style="@style/BtnDigit"  android:text="4"    android:layout_column="0" android:layout_row="6"/>
         <Button android:id="@+id/btn5"   style="@style/BtnDigit"  android:text="5"    android:layout_column="1" android:layout_row="6"/>
         <Button android:id="@+id/btn6"   style="@style/BtnDigit"  android:text="6"    android:layout_column="2" android:layout_row="6"/>
         <Button android:id="@+id/btnMul" style="@style/BtnOp"     android:text="×"    android:layout_column="3" android:layout_row="6"/>
         <Button android:id="@+id/btnReciprocal" style="@style/BtnSpecial" android:text="1/x" android:layout_column="4" android:layout_row="6"/>
 
-        <!-- ── ROW 6: 1  2  3  −  |x| ── -->
+        <!--ROW 6: 1  2  3  −  |x|-->
         <Button android:id="@+id/btn1"     style="@style/BtnDigit"  android:text="1"   android:layout_column="0" android:layout_row="7"/>
         <Button android:id="@+id/btn2"     style="@style/BtnDigit"  android:text="2"   android:layout_column="1" android:layout_row="7"/>
         <Button android:id="@+id/btn3"     style="@style/BtnDigit"  android:text="3"   android:layout_column="2" android:layout_row="7"/>

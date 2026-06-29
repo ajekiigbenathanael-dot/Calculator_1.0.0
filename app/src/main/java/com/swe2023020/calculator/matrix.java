@@ -113,8 +113,7 @@ public class matrix {
         return t;
     }
 
-    // ── Private determinant helpers ───────────────────────────────────────────
-
+    // ── Private determinant helpers
     private static double det2(double[][] m) {
         return m[0][0] * m[1][1] - m[0][1] * m[1][0];
     }

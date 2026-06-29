@@ -19,12 +19,12 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    // ── Views ────────────────────────────────────────────────────────────────
+    // ── Views
     private TextView tvExpression, tvResult;
     private TextView tvMode;
     private HorizontalScrollView displayScroll;
 
-    // ── State ─────────────────────────────────────────────────────────────────
+    // ── State
     private final CalculatorEngine evaluator = new CalculatorEngine();
     private final StringBuilder inputBuffer = new StringBuilder();
     private final Deque<String> history = new ArrayDeque<>();
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         updateDisplay();
     }
 
-    // ── Button wiring ─────────────────────────────────────────────────────────
+    // ── Button wiring
 
     private void setupButtons() {
         // Numbers
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         bindButton(R.id.btnMode2,  v -> promptStat("mode"));
     }
 
-    // ── Input helpers ─────────────────────────────────────────────────────────
+    // ── Input helpers
 
     private void bindDigit(int id, String digit) {
         bindButton(id, v -> onDigit(digit));
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
         scaleY.start();
     }
 
-    // ── Input logic ───────────────────────────────────────────────────────────
+    // ── Input logic
 
     private void onDigit(String digit) {
         if (resultDisplayed) {
@@ -272,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
         updateDisplay();
     }
 
-    // ── Display ───────────────────────────────────────────────────────────────
+    // ── Display
 
     private void updateDisplay() {
         String expr = inputBuffer.toString();
@@ -324,16 +324,14 @@ public class MainActivity extends AppCompatActivity {
         anim.start();
     }
 
-    // ── Copy to clipboard ─────────────────────────────────────────────────────
-
+    // ── Copy to clipboard
     private void copyToClipboard(String text) {
         ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         cm.setPrimaryClip(ClipData.newPlainText("result", text));
         Toast.makeText(this, "Copied: " + text, Toast.LENGTH_SHORT).show();
     }
 
-    // ── History ───────────────────────────────────────────────────────────────
-
+    // ── History
     private void showHistory() {
         if (history.isEmpty()) {
             Toast.makeText(this, "No history yet", Toast.LENGTH_SHORT).show();
@@ -358,8 +356,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    // ── Statistics ────────────────────────────────────────────────────────────
-
+    // ── Statistics
     private void showStatDialog() {
         final EditText input = new EditText(this);
         input.setHint("Enter numbers separated by commas (e.g. 2,4,6,8)");
@@ -418,8 +415,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    // ── Matrix ────────────────────────────────────────────────────────────────
-
+    // ── Matrix
     private void showMatrixDialog() {
         String[] sizes = {"2×2", "3×3", "4×4"};
         new AlertDialog.Builder(this, R.style.DarkDialog)
@@ -560,8 +556,7 @@ public class MainActivity extends AppCompatActivity {
         return m;
     }
 
-    // ── Dialogs ───────────────────────────────────────────────────────────────
-
+    // ── Dialogs
     private void showResult(String title, String message) {
         new AlertDialog.Builder(this, R.style.DarkDialog)
                 .setTitle(title)
